@@ -31,7 +31,7 @@ public class AccountController : ControllerBase
         {
             return BadRequest("Missing 'x-Device' header.");
         }
-
+ 
         if (!ValidateUser(userDto, device))
         {
             return BadRequest("Invalid user data.");
